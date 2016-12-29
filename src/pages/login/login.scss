@@ -1,0 +1,27 @@
+@mixin linear-gradient($direction, $color-stops...) {
+  background: nth(nth($color-stops, 1), 1);
+  background: -webkit-linear-gradient(legacy-direction($direction), $color-stops);
+  background: linear-gradient($direction, $color-stops);
+}
+
+page-login {
+  ion-content {
+    @include linear-gradient(#39c6f3, #83d1db);
+  }
+
+  .login-content {
+    .logo-row {
+      padding-bottom: 20px;
+
+      img {
+        border-radius: 50%;
+      }
+    }
+
+    ion-row {
+      align-items: center;
+      text-align: center;
+    }
+    
+  }
+}
