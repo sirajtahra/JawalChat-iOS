@@ -1,7 +1,27 @@
 <ion-content class="login-content" padding>
-  <ion-row class="logo-row">
-    <ion-col width-50>
-      <img src="../assets/img/jc-logo.png"/>
-    </ion-col>
-  </ion-row>
+    <ion-row class="logo-row">
+        <ion-col width-100>
+            <img class="logo-image" src="../assets/img/jc-logo.png" />
+        </ion-col>
+    </ion-row>
+    <div class="login-box">
+        <form>
+            <ion-row center>
+                <ion-col width-100>
+                    <ion-list inset>
+                        <ion-item>
+                            <ion-label floating>Username</ion-label>
+                            <ion-input type="text"></ion-input>
+                        </ion-item>
+                        <ion-item>
+                            <ion-label floating>Password</ion-label>
+                            <ion-input type="password"></ion-input>
+                        </ion-item>
+                    </ion-list>
+                    <button ion-button block full class="login-btn">LOG IN</button>
+                </ion-col>
+            </ion-row>
+        </form>
+        <button ion-button class="register-btn" block clear>Create New Account</button>
+    </div>
 </ion-content>
